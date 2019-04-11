@@ -15,8 +15,7 @@ while True:
     capacitance = surface.read()
     capacitance_ratio = capacitance / threshold
 
-    if 0.40 < capacitance_ratio < 0.95:
+    if 0.40 < capacitance_ratio < 0.90:
         print('Capacitance: {0}, Diff: {1}, Ratio: {2}'.format(
                   capacitance, threshold - capacitance, capacitance_ratio))
     sleep(0.2)
-
