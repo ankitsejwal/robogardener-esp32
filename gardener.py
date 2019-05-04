@@ -1,5 +1,5 @@
 from machine import Pin, TouchPad
-from time import sleep, strftime
+from time import sleep
 
 def start_pump(duration=3):
     RELAY(0)    # on
